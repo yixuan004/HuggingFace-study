@@ -139,19 +139,17 @@ tokenizer（词符化器）为所有的预训练模型提供了预处理，并�
 <font color='red'>
 这里补充一个之前不太常用的内容，python字典前加*，**的作用
 </font>
+
 ```python
 def add(a, b):
     return a + b
 
 data = [4, 3]
-print(add(*data))
-# equals to print add(4, 3)
+print(add(*data)) # equals to print add(4, 3)
 
 data = {'a': 4, 'b': 3}
-print(add(*data))
-# equals to print add('a', 'b')
-print(add(**data))
-# equals to print add(4, 3)
+print(add(*data)) # equals to print add('a', 'b')
+print(add(**data) # equals to print add(4, 3)
 ```
 
 模型本身是一个常规的 Pytorch nn.Module（或 TensorFlow tf.keras.Model），可以常规方式使用。 [这个教程](https://huggingface.co/transformers/training.html)解释了如何将这样的模型整合到经典的 PyTorch 或 TensorFlow 训练循环中，或是如何使用我们的 Trainer 训练器）API 来在一个新的数据集上快速微调。
@@ -159,7 +157,6 @@ print(add(**data))
 <font color="red">
 上边这个教程的地方，将在UsingTransformers/目录下进行更为详细的学习
 </font>
-
 
 ### 4.2 TensorFlow任务中使用任意预训练模型
 待补充
