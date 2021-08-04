@@ -15,3 +15,6 @@ https://huggingface.co/
 ## GettingStartedDemo目录
 该目录下记录一些使用不同模型进行不同任务的Getting start demo。
 * MaskedWordCompletionWithBERT：使用预训练的BERT模型进行掩码单词（对于中文是单字）的填充。
+
+## HuggingFaceStartCourses
+该目录下主要是学习Hugging Face官方提供的课程
